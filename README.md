@@ -4,14 +4,15 @@ This is a [Parse Cloud Code](https://www.parse.com/docs/cloud_code_guide) librar
 
 Registering at <http://pusher.com> and use the application credentials within your app as shown below.
 
-This library is based on the [pusher / pusher-node-server](https://github.com/pusher/pusher-node-server) but unfortunately this library has dependencies that are incompatible with Parse Cloud Code. All incompatible libraries calls were replaced with alternatives found on the web (see Credits)
+This code is based on [pusher / pusher-node-server](https://github.com/pusher/pusher-node-server) which unfortunately depends on libraries that are incompatible with Parse Cloud Code.
+All incompatible libraries calls were replaced with alternatives found from the web (see Credits)
 
-Note: This new library has not been extensively tested. It works for my use case of triggering an event on a private channel.
-Please let me know if it is not working as expected or if something can be improved.
+Note: This new library has not been extensively tested yet. It works for my use case of triggering an event on a private channel.
+Please let me know if it is not working as expected or if anything can be improved.
 
 ## Installation
 
-After you created your Cloud Code structure copy all the js files from this repo into the cloud directory.
+After you created your Parse Cloud Code structure copy all the js files from this repo into the `cloud` directory.
 
 ## How to use
 
@@ -127,7 +128,7 @@ The node.js crypto package was replaced with the following two libraries which w
 * <http://www.myersdaily.org/joseph/javascript/md5.js>
 
 Node.js requests library calls were replaced with:
-* [Parse.Cloud.httpRequest]
+* [Parse.Cloud.httpRequest](https://www.parse.com/docs/cloud_code_guide#networking)
 
 ## License
 
